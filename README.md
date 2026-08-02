@@ -1,21 +1,46 @@
-<<<<<<< HEAD
-# React + Vite
+# 🌌 The Universe Wrote Our Story
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive cinematic love story built with React, Three.js, GSAP, and Framer Motion.
 
-Currently, two official plugins are available:
+## ❤️ About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is a personalized interactive website created as a special gift. Instead of a traditional webpage, it tells a story through cinematic animations, immersive visuals, and meaningful interactions.
 
-## React Compiler
+## ✨ Planned Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🌌 Interactive 3D universe
+- 🌙 Dynamic moon and stars
+- ☄️ Shooting stars
+- ✨ Aurora effects
+- 💌 Animated handwritten letter
+- 📸 Interactive scrapbook memories
+- ⭐ Hidden messages
+- 🌳 Dreams tree
+- 🎆 Cinematic finale
+- 🎵 Background music
+- 📱 Responsive design
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Website-for-her
-This website is dedicated to your favorite person
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
+- GSAP
+- Three.js
+- React Three Fiber
+- Drei
+- Lenis
+- Howler
+
+## 🚀 Run
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+Made with ❤️
 >>>>>>> e75410c95d8a7c188b48d7b39be250d08de0f68a
