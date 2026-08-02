@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap');
+
+@import "tailwindcss";
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#050816;
+  color:white;
+  font-family:"Poppins",sans-serif;
+  overflow-x:hidden;
+}
+
+button{
+  cursor:pointer;
+}
+
+::selection{
+  background:#ff4f8b;
+  color:white;
+}
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#ff4f8b;
+  border-radius:999px;
+}
+.shooting-star{
+    position:absolute;
+    top:-10%;
+    left:-10%;
+    width:180px;
+    height:2px;
+    background:linear-gradient(to right,white,transparent);
+    transform:rotate(35deg);
+    animation:shoot 8s linear infinite;
+    opacity:.8;
+}
+
+.delay-1{
+    animation-delay:3s;
+}
+
+.delay-2{
+    animation-delay:6s;
+}
+
+@keyframes shoot{
+
+0%{
+transform:translate(-200px,-200px) rotate(35deg);
+opacity:0;
+}
+
+10%{
+opacity:1;
+}
+
+100%{
+transform:translate(1800px,1000px) rotate(35deg);
+opacity:0;
+}
+
+}
