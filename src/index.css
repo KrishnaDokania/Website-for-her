@@ -1,6 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@400;700&display=swap');
 
 @import "tailwindcss";
+
+/* =========================
+   Theme Variables
+========================= */
+
+:root{
+  --bg:#020617;
+  --bg-soft:#0b1220;
+
+  --primary:#ff6b9a;
+  --secondary:#a855f7;
+
+  --text:#f8fafc;
+  --muted:#cbd5e1;
+
+  --glass:rgba(255,255,255,.08);
+  --glass-border:rgba(255,255,255,.15);
+}
+
+/* =========================
+   Global Reset
+========================= */
 
 *{
   margin:0;
@@ -8,68 +30,67 @@
   box-sizing:border-box;
 }
 
-html{
-  scroll-behavior:smooth;
+html,
+body,
+#root{
+  width:100%;
+  height:100%;
 }
 
 body{
-  background:#050816;
-  color:white;
+  overflow-x:hidden;
+  overflow-y:auto;
+  background:#020617;
+  color:var(--text);
   font-family:"Poppins",sans-serif;
+}
+
+html{
   overflow-x:hidden;
 }
 
-button{
-  cursor:pointer;
+#root{
+  min-height:100%;
 }
 
-::selection{
-  background:#ff4f8b;
-  color:white;
+/* Typography */
+
+.heading{
+  font-family:"Cormorant Garamond",serif;
 }
 
-::-webkit-scrollbar{
-  width:8px;
+.handwriting{
+  font-family:"Caveat",cursive;
 }
 
-::-webkit-scrollbar-thumb{
-  background:#ff4f8b;
-  border-radius:999px;
-}
-.shooting-star{
-    position:absolute;
-    top:-10%;
-    left:-10%;
-    width:180px;
-    height:2px;
-    background:linear-gradient(to right,white,transparent);
-    transform:rotate(35deg);
-    animation:shoot 8s linear infinite;
-    opacity:.8;
+/* Glass */
+
+.glass{
+  background:var(--glass);
+  border:1px solid var(--glass-border);
+  backdrop-filter:blur(18px);
 }
 
-.delay-1{
-    animation-delay:3s;
+/* Aurora */
+
+.aurora{
+  position:absolute;
+  inset:0;
+  background:
+      radial-gradient(circle at 20% 20%,rgba(168,85,247,.18),transparent 45%),
+      radial-gradient(circle at 80% 70%,rgba(255,107,154,.12),transparent 40%);
+  filter:blur(60px);
+  animation:aurora 10s ease-in-out infinite alternate;
 }
 
-.delay-2{
-    animation-delay:6s;
+@keyframes aurora{
+
+from{
+transform:translateY(-30px);
 }
 
-@keyframes shoot{
-
-0%{
-transform:translate(-200px,-200px) rotate(35deg);
-opacity:0;
-}
-
-10%{
-opacity:1;
-}
-
-100%{
-transform:translate(1800px,1000px) rotate(35deg);
-opacity:0;
+to{
+transform:translateY(30px);
 }
 
 }

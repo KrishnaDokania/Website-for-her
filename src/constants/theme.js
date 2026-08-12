@@ -21,3 +21,24 @@ export const FONTS={
     letter:"Dancing Script"
 
 };
+export const theme = {
+
+    colors:{
+
+        background:"#020617",
+
+        backgroundSoft:"#0b1220",
+
+        primary:"#ff6b9a",
+
+        secondary:"#a855f7",
+
+        text:"#f8fafc",
+
+        muted:"#cbd5e1"
+
+    },
+
+    borderRadius:"24px"
+
+}
